@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Dela+Gothic+One&family=Fredoka:wght@300&family=Nunito:wght@400;500;600&family=Oswald:wght@200;400;500;600;700&family=Roboto:wght@100&family=Varela+Round&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer{
+    body{
+        @apply text-whiteColor bg-primaryColor tracking-wider font-dmsans;
+    }
+}

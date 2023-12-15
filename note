@@ -1,0 +1,11 @@
+install tailwind :
+1- npm init -y (init a package.json)
+2-npm install -D tailwindcss
+3-npx tailwindcss init (Create a Tailwind CSS config file)
+add custom colors in the config file 
+4-create a src folder and put inside a css file
+5- ad this {npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch (i for input and o for output)} into package.json in watch section
+before: "test": "echo \"Error: no test specified\" && exit 1"(delete this and replace it with watch)
+after :"watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+6-add html file in src folder 
+7-run the project: npm run watch
