@@ -15,9 +15,10 @@
     <title>responsive || burger website</title>
   </head>
   <body>
-    <!-- add left-0 and z-50 -->
-    <header class="w-full fixed top-0 bg-primaryColor">
-        <nav class="relative container flex justify-between items-center h-14 bg-primaryColor"> 
+    <!-- add z-50 -->
+    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+        <nav class="container relative h-14 flex justify-between items-center"> 
+          
           <!-- LOGO -->
             <div>
               <a href="#" class="uppercase text-2xl font-oswald">
@@ -42,18 +43,41 @@
               <div id="humburger" class="md:hidden">
                 <i class="ri-menu-2-line cursor-pointer"></i>
               </div>
-              
             </div>
-            
-              
-              
-
-        </nav>
+          </nav>
     </header>
 
     <main>
     <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
-    
+    <section id="home" class="container flex flex-col items-center gap-10 md:flex-row">
+      
+        <div class="mx-auto md:basis-1/2 lg:basis-2/5">
+          <img src="./img/home-image.png" alt="Home image" class="w-60 md:w-96 animate-movingY">
+        </div>
+        <div class="text-center md:text-start md:basis-1/2 lg:basis-3/5">
+          <h1 class="home_title">HAPPY TUMMY WITH TASTY BURGERS.</h1>
+          <div class="separator md:mx-0 "></div> <!-- for the line-->
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,libero magni? Fugiat perspiciatis eius, sequi aliquid ullam dolorem temporibus voluptate corrupti fugit saepe sunt unde culpa? Tenetur quos quod laudantium.</p>
+          <div class="flex items-center justify-center gap-10 py-10 md:justify-start md:gap-20">
+            
+            <div class=" flex flex-col text-center">
+              <i class="fa-solid fa-utensils text-secondaryColor text-4xl mb-2"></i>
+              Delicious
+            </div>
+            <div class="flex flex-col text-center">
+              <i class="fa-solid fa-droplet text-secondaryColor text-4xl mb-2"></i>
+              Fresh
+            </div>
+            <div class=" flex flex-col text-center">
+              <i class="fa-brands fa-envira text-secondaryColor text-4xl mb-2"></i>
+              Organic
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">learn more</a>
+
+        </div>
+      
+    </section>
    
 
     <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
