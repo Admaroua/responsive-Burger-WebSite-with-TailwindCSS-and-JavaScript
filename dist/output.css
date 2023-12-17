@@ -691,6 +691,10 @@ section{
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -715,6 +719,10 @@ section{
   width: 100%;
 }
 
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .basis-1\/3{
   flex-basis: 33.333333%;
 }
@@ -733,8 +741,16 @@ section{
   cursor: pointer;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
@@ -753,6 +769,10 @@ section{
   gap: 2.5rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -761,10 +781,34 @@ section{
   gap: 1.25rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .border-b{
@@ -789,11 +833,6 @@ section{
 .bg-primaryColorLight{
   --tw-bg-opacity: 1;
   background-color: rgb(1 13 120 / var(--tw-bg-opacity));
-}
-
-.bg-red-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .bg-redColor{
@@ -823,6 +862,16 @@ section{
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-center{
@@ -867,6 +916,11 @@ section{
   color: rgb(255 204 0 / var(--tw-text-opacity));
 }
 
+.text-paragraphColor{
+  --tw-text-opacity: 1;
+  color: rgb(192 192 192 / var(--tw-text-opacity));
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
@@ -876,7 +930,8 @@ section{
 }
 
 .home_title,
-    .card_title{
+    .card_title,
+    .section_title{
   font-family: Oswald, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -886,10 +941,16 @@ section{
 
 @media (min-width: 1024px){
   .home_title,
-    .card_title{
+    .card_title,
+    .section_title{
     font-size: 3.75rem;
     line-height: 1;
   }
+}
+
+.section_title{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .card_title{
