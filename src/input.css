@@ -30,8 +30,12 @@
 @layer utilities{
     .home_title,
     .card_title,
-    .section_title{
+    .section_title,
+    .contact_title{
         @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
+    }
+    .contact_title{
+        @apply text-darkColor text-3xl;
     }
     .name{
         @apply text-base font-oswald uppercase;

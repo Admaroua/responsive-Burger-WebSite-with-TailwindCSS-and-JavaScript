@@ -634,10 +634,6 @@ section{
   border-radius: 0.5rem;
 }
 
-.visible{
-  visibility: visible;
-}
-
 .fixed{
   position: fixed;
 }
@@ -692,6 +688,16 @@ section{
   margin-bottom: 2.5rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -700,12 +706,8 @@ section{
   margin-left: 1rem;
 }
 
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .block{
@@ -772,6 +774,10 @@ section{
   flex-basis: 33.333333%;
 }
 
+.basis-1\/2{
+  flex-basis: 50%;
+}
+
 @keyframes move{
   50%{
     transform: translateY(-1rem);
@@ -830,6 +836,10 @@ section{
   gap: 1.25rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -848,6 +858,10 @@ section{
 
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .border-b{
@@ -884,14 +898,23 @@ section{
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
 }
 
-.bg-red-400{
+.bg-whiteColor{
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-300{
+.bg-darkColor{
   --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .p-5{
@@ -900,6 +923,14 @@ section{
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .py-10{
@@ -917,13 +948,37 @@ section{
   padding-bottom: 0.75rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{
@@ -942,6 +997,11 @@ section{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl{
@@ -973,6 +1033,11 @@ section{
   color: rgb(255 204 0 / var(--tw-text-opacity));
 }
 
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
@@ -987,7 +1052,8 @@ section{
 
 .home_title,
     .card_title,
-    .section_title{
+    .section_title,
+    .contact_title{
   font-family: Oswald, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -998,10 +1064,18 @@ section{
 @media (min-width: 1024px){
   .home_title,
     .card_title,
-    .section_title{
+    .section_title,
+    .contact_title{
     font-size: 3.75rem;
     line-height: 1;
   }
+}
+
+.contact_title{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .name{
@@ -1083,9 +1157,26 @@ section{
   animation: move 2s linear infinite;
 }
 
+.hover\:bg-darkColorLight:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
 .hover\:text-secondaryColor:hover{
   --tw-text-opacity: 1;
   color: rgb(255 204 0 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-75:hover{
+  opacity: 0.75;
+}
+
+.focus\:border:focus{
+  border-width: 1px;
+}
+
+.focus\:border-none:focus{
+  border-style: none;
 }
 
 @media (min-width: 768px){
