@@ -23,6 +23,9 @@
     .card{
        @apply rounded-lg overflow-hidden;
     }
+    
+    
+    
 }
 @layer utilities{
     .home_title,
@@ -37,13 +40,28 @@
         @apply text-xl ;
     }
     .separator{
-        @apply w-28 h-[2px] bg-secondaryColor mx-auto my-6;
+        @apply w-28 h-[2px] bg-secondaryColor my-6;
     }
     .paragraph{
-        @apply text-paragraphColor text-xs leading-5 lg:text-sm;
+        @apply text-paragraphColor text-xs leading-5;
         
     }
-    
+    .price{
+        @apply text-secondaryColor mt-2; 
+    }
+    .menuitem{
+       @apply h-56 lg:h-40 grid place-content-center rounded-3xl bg-primaryColorLight hover:bg-secondaryColor ease-linear duration-200;
+    }
+    .menuimage{
+        @apply h-56 lg:h-40 grid place-content-center rounded-3xl bg-primaryColorLight hover:bg-secondaryColor ease-linear duration-200;
+    }
+        
 
 }
+.menu ul li:hover,
+.menu ul li.active{
+    @apply bg-secondaryColor text-blackColor;
+
+}
+
 

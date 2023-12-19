@@ -679,8 +679,17 @@ section{
   margin-right: auto;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.block{
+  display: block;
 }
 
 .inline-block{
@@ -707,6 +716,10 @@ section{
   width: 7rem;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .w-40{
   width: 10rem;
 }
@@ -717,6 +730,10 @@ section{
 
 .w-full{
   width: 100%;
+}
+
+.max-w-md{
+  max-width: 28rem;
 }
 
 .flex-1{
@@ -741,6 +758,10 @@ section{
   cursor: pointer;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -749,8 +770,8 @@ section{
   flex-direction: column;
 }
 
-.items-start{
-  align-items: flex-start;
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -769,8 +790,8 @@ section{
   gap: 2.5rem;
 }
 
-.gap-2{
-  gap: 0.5rem;
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-4{
@@ -781,30 +802,16 @@ section{
   gap: 1.25rem;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-x-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .rounded-lg{
@@ -869,9 +876,8 @@ section{
   padding-bottom: 1.25rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -911,14 +917,14 @@ section{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-secondaryColor{
-  --tw-text-opacity: 1;
-  color: rgb(255 204 0 / var(--tw-text-opacity));
-}
-
 .text-paragraphColor{
   --tw-text-opacity: 1;
   color: rgb(192 192 192 / var(--tw-text-opacity));
+}
+
+.text-secondaryColor{
+  --tw-text-opacity: 1;
+  color: rgb(255 204 0 / var(--tw-text-opacity));
 }
 
 .duration-200{
@@ -927,6 +933,10 @@ section{
 
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-linear{
+  transition-timing-function: linear;
 }
 
 .home_title,
@@ -959,8 +969,6 @@ section{
 }
 
 .separator{
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   height: 2px;
@@ -976,11 +984,40 @@ section{
   color: rgb(192 192 192 / var(--tw-text-opacity));
 }
 
+.menuimage{
+  display: grid;
+  height: 14rem;
+  place-content: center;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 13 120 / var(--tw-bg-opacity));
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.menuimage:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 204 0 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1024px){
-  .paragraph{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .menuimage{
+    height: 10rem;
   }
+}
+
+.menu ul li:hover,
+.menu ul li.active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 204 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:scale-110:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes move{
@@ -1026,6 +1063,10 @@ section{
     display: none;
   }
 
+  .md\:w-32{
+    width: 8rem;
+  }
+
   .md\:w-96{
     width: 24rem;
   }
@@ -1040,6 +1081,10 @@ section{
 
   .md\:basis-1\/2{
     flex-basis: 50%;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -1073,6 +1118,10 @@ section{
 }
 
 @media (min-width: 1024px){
+  .lg\:w-24{
+    width: 6rem;
+  }
+
   .lg\:flex-1{
     flex: 1 1 0%;
   }
@@ -1083,6 +1132,10 @@ section{
 
   .lg\:basis-3\/5{
     flex-basis: 60%;
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -1097,4 +1150,5 @@ section{
     gap: 2.5rem;
   }
 }
+
 

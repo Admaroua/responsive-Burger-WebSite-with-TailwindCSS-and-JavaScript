@@ -15,7 +15,7 @@
     <title>responsive || burger website</title>
   </head>
   <body>
-    <!-- add z-50 -->
+    
     <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
         <nav class="container relative h-14 flex justify-between items-center"> 
           
@@ -56,7 +56,7 @@
         </div>
         <div class="text-center md:text-start md:basis-1/2 lg:basis-3/5">
           <h1 class="home_title">HAPPY TUMMY WITH TASTY BURGERS.</h1>
-          <div class="separator md:mx-0 "></div> <!-- for the line-->
+          <div class="separator mx-auto md:mx-0 "></div> <!-- for the line-->
           <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,libero magni? Fugiat perspiciatis eius, sequi aliquid ullam dolorem temporibus voluptate corrupti fugit saepe sunt unde culpa? Tenetur quos quod laudantium.</p>
           <div class="flex items-center justify-center gap-10 py-10 md:justify-start md:gap-20">
             
@@ -162,8 +162,8 @@
           <img src="./img/about.jpg" alt="about image" class="rounded-lg">
         </div>
         <div class="flex-1">
-          <h1 class="section_title">FIND FOOD AND DRINKS, ALL-IN-ONE PLACE FOR YOUR BEST TASTE.</h1>
-          <div class="separator"></div>
+         <h1 class="section_title">FIND FOOD AND DRINKS, ALL-IN-ONE PLACE FOR YOUR BEST TASTE.</h1>
+          <div class="separator "></div iv>
           <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
           <ul class="grid grid-cols-2 space-y-1 py-5">
             <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>Best Price</li>
@@ -173,13 +173,210 @@
           </ul>
           
             <a href="#" class="btn btn-primary">About Us</a>
-          
         </div>
-
       </div>
     </section>
 
     <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+    <section id="menu">
+      <div class="container">
+        <div class="flex flex-col items-center max-w-md text-center mx-auto">
+          <h1 class="section_title">OUR BEST MENU</h1>
+          <div class="separator"></div>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+          <div class="menu">
+            <ul class="flex gap-3 flex-wrap justify-center my-10 ">
+              <li data-tabs="all" class="btn bg-primaryColorLight active">All</li>
+              <li data-tabs="food" class="btn bg-primaryColorLight">food</li>
+              <li data-tabs="snack" class="btn bg-primaryColorLight">snack</li>
+              <li data-tabs="beverage" class="btn bg-primaryColorLight">beverage</li>
+            </ul>
+          </div>
+      </div>
+      <div class="container">
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- burger 1 -->
+          <li class="item-wrap food">
+            <div class="menuimage"><img src="./img/burger-1.png" alt="food image" class="w-40 md:w-32 lg:w-24 hover:scale-110 ease-linear duration-200"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">REGULAR BEEF BURGER</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- burger 2 -->
+          <li class="item-wrap food">
+            <div class="menuimage"><img src="./img/burger-2.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">REGULAR BEEF BURGER</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- burger 3 -->
+          <li class="item-wrap food">
+            <div class="menuimage"><img src="./img/burger-3.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">REGULAR BEEF BURGER</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- burger 4 -->
+          <li class="item-wrap food">
+            <div class="menuimage"><img src="./img/burger-4.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">REGULAR BEEF BURGER</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- burger 5 -->
+          <li class="item-wrap food">
+            <div class="menuimage"><img src="./img/burger-5.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">REGULAR BEEF BURGER</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- snacks -->
+          <!-- snack 1 -->
+          <li class="item-wrap snack">
+            <div class="menuimage"><img src="./img/snack-1.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">FRENCH FRIES</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- snack 2 -->
+          <li class="item-wrap snack">
+            <div class="menuimage"><img src="./img/snack-2.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">FRENCH FRIES</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- snack 3 -->
+          <li class="item-wrap snack">
+            <div class="menuimage"><img src="./img/snack-3.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">FRENCH FRIES</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- snack 4 -->
+          <li class="item-wrap snack">
+            <div class="menuimage"><img src="./img/snack-4.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">FRENCH FRIES</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- snack 5 -->
+          <li class="item-wrap snack">
+            <div class="menuimage"><img src="./img/snack-5.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">FRENCH FRIES</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- snack 6 -->
+          <li class="item-wrap snack">
+            <div class="menuimage"><img src="./img/snack-6.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">FRENCH FRIES</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- beverage -->
+          <!-- bvg 1 -->
+          <li class="item-wrap beverage">
+            <div class="menuimage"><img src="./img/beverage-1.png" alt="snack image" class="w-32 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">SWEET SMOOTHIE</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- bvg 2 -->
+          <li class="item-wrap beverage">
+            <div class="menuimage"><img src="./img/beverage-2.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">SWEET SMOOTHIE</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- bvg 3 -->
+          <li class="item-wrap beverage">
+            <div class="menuimage"><img src="./img/beverage-3.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">SWEET SMOOTHIE</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- bvg 4 -->
+          <li class="item-wrap beverage">
+            <div class="menuimage"><img src="./img/beverage-4.png" alt="snack image" class="w-32 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">SWEET SMOOTHIE</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+          <!-- bvg 5 -->
+          <li class="item-wrap beverage">
+            <div class="menuimage"><img src="./img/beverage-5.png" alt="snack image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"></div>
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card_title">SWEET SMOOTHIE</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <p class="text-secondaryColor">$42.00</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
 
