@@ -7,7 +7,7 @@
         @apply scroll-smooth;
     }
     body{
-        @apply text-whiteColor bg-primaryColor tracking-wider font-dmsans;
+        @apply text-whiteColor bg-primaryColor tracking-wider font-dmsans dark:bg-darkColor;
 
     }
     section{
@@ -60,10 +60,10 @@
         @apply text-secondaryColor mt-2; 
     }
     .menuitem{
-       @apply h-56 lg:h-40 grid place-content-center rounded-3xl bg-primaryColorLight hover:bg-secondaryColor ease-linear duration-200;
+       @apply h-56 lg:h-40 grid place-content-center rounded-3xl bg-primaryColorLight dark:bg-darkColorLight hover:bg-secondaryColor ease-linear duration-200;
     }
     .menuimage{
-        @apply h-56 lg:h-40 grid place-content-center rounded-3xl bg-primaryColorLight hover:bg-secondaryColor ease-linear duration-200;
+        @apply h-56 lg:h-40 grid place-content-center rounded-3xl bg-primaryColorLight dark:bg-darkColorLight hover:bg-secondaryColor ease-linear duration-200;
     }
         
 

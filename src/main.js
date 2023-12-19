@@ -79,3 +79,31 @@ const scrollHeader=()=>{
     }
 }
 window.addEventListener("scroll",scrollHeader);
+// ~~~~~~~~ Dark mode ~~~~~~~~~~~
+const html=document.querySelector('html');
+const modeBtn=document.getElementById('modeBtn');
+if(localStorage.getItem("mode")== 'dark'){
+    darkMode();
+}else{
+    lightMode();
+}
+modeBtn.addEventListener("click",()=>{
+    if(localStorage.getItem("mode")== 'light'){
+        darkMode();
+    }else{
+        lightMode();
+    }
+    
+})
+function darkMode(){
+    html.classList.add('dark');
+    modeBtn.classList.replace('ri-moon-line','ri-sun-line');
+    localStorage.setItem("mode","dark");
+
+}
+function lightMode(){
+    html.classList.remove('dark');
+    modeBtn.classList.replace('ri-sun-line','ri-moon-line');
+    localStorage.setItem("mode","light");
+
+}
