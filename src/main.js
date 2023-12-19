@@ -107,3 +107,23 @@ function lightMode(){
     localStorage.setItem("mode","light");
 
 }
+
+// ~~~~~~~~Scroll reveal animation~~~~~~~~~~~
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 400
+  })
+  
+  sr.reveal(".home_image");
+  sr.reveal(".home_desc",  { origin: "bottom" });
+  sr.reveal(".promo__card-1",  { origin: "left" });
+  sr.reveal(".promo__card-2",  { origin: "right" });
+  sr.reveal(".about__img",  { origin: "bottom" });
+  sr.reveal(".about__content",  { origin: "top" });
+  sr.reveal(".menu__items",  { origin: "left" });
+  sr.reveal(".review",  { origin: "right" });
+  sr.reveal(".footer", { origin: "top" });
+  sr.reveal(".category__card", { interval: 300 })
+

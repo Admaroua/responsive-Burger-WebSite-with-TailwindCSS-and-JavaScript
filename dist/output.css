@@ -1193,19 +1193,9 @@ section{
   opacity: 0.75;
 }
 
-:is(.dark .dark\:border-paragraphColor){
-  --tw-border-opacity: 1;
-  border-color: rgb(192 192 192 / var(--tw-border-opacity));
-}
-
 :is(.dark .dark\:border-darkColorLight){
   --tw-border-opacity: 1;
   border-color: rgb(23 23 23 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-b-darkColorLight){
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(23 23 23 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:bg-darkColor){
