@@ -7,11 +7,6 @@ const all =document.querySelectorAll('.item-wrap');
 const food =document.querySelectorAll('.food');
 const snack =document.querySelectorAll('.snack');
 const beverage =document.querySelectorAll('.beverage');
-
-
-
-
-
 menu.forEach((m)=>{
    m.addEventListener("click",()=>{
         menu.forEach(m=>{
@@ -58,5 +53,29 @@ menuItems.classList.remove('hidden')
 closeMenu.addEventListener("click",() =>{
     menuItems.classList.add('hidden')
 })
+// ~~~~~~~~Scroll up ~~~~~~~~~~~
 
+const scrollUp=()=>{
+    const scroolUpBtn= document.getElementById('scroll-up');
+    if(this.scrollY >=250){
+        scroolUpBtn.classList.remove("-bottom-1/2");
+        scroolUpBtn.classList.add("bottom-4")
+    }else{
+        scroolUpBtn.classList.add("-bottom-1/2");
+        scroolUpBtn.classList.remove("bottom-4")
+    }
+}
+window.addEventListener("scroll",scrollUp);
 
+// ~~~~~~~~Add border to header on scroll down ~~~~~~~~~~~
+
+const scrollHeader=()=>{
+    const header= document.getElementById('header');
+    if(this.scrollY >=50){
+        header.classList.add("border-b","border-secondaryColor");
+    }else{
+        header.classList.remove("border-b","border-secondaryColor");
+        
+    }
+}
+window.addEventListener("scroll",scrollHeader);
