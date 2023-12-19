@@ -58,3 +58,5 @@ menuItems.classList.remove('hidden')
 closeMenu.addEventListener("click",() =>{
     menuItems.classList.add('hidden')
 })
+
+

@@ -634,6 +634,10 @@ section{
   border-radius: 0.5rem;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -656,6 +660,10 @@ section{
 
 .left-0{
   left: 0px;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .right-4{
@@ -688,6 +696,18 @@ section{
   margin-bottom: 0.5rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -708,8 +728,16 @@ section{
   display: none;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-14{
   height: 3.5rem;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-28{
@@ -814,6 +842,10 @@ section{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -852,8 +884,22 @@ section{
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
 }
 
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
 .p-5{
   padding: 1.25rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .py-10{
@@ -956,6 +1002,13 @@ section{
     font-size: 3.75rem;
     line-height: 1;
   }
+}
+
+.name{
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
 }
 
 .section_title{

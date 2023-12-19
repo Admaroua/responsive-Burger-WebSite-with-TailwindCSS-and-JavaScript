@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <!--  Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
     <link href="/dist/output.css" rel="stylesheet" />
@@ -378,7 +379,93 @@
       </div>
     </section>
 
-    <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~ Reviews ~~~~~~~~~~~~~~~-->
+    <section id="review" class="bg-primaryColorLight py-10">
+      <div class="container">
+        <div class="flex flex-col items-center max-w-md text-center mx-auto">
+          <h1 class="section_title">CUSTOMER REVIEW</h1>
+          <div class="separator"></div>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class="swiper py-10">
+          <!-- review -->
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide bg-primaryColor rounded-lg p-6 flex flex-col gap-5">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+              <div>
+                <div class="flex  items-center relative">
+                  <img src="./img/review-1.jpg" alt="review image" class="rounded-full w-12 h-12">
+                  <div class="ml-4">
+                    <p class="name">John doe</p>
+                    <p class="paragraph">Designer</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor absolute right-0"></i>
+                </div>
+              </div>
+            </li>
+            <!-- review -->
+            <li class="swiper-slide bg-primaryColor rounded-lg p-6 flex flex-col gap-5">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+              <div>
+                <div class="flex  items-center relative">
+                  <img src="./img/review-2.jpg" alt="review image" class="rounded-full w-12 h-12">
+                  <div class="ml-4">
+                    <p class="name">John doe</p>
+                    <p class="paragraph">Designer</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor absolute right-0"></i>
+                </div>
+              </div>
+            </li>
+            <!-- review -->
+            <li class="swiper-slide bg-primaryColor rounded-lg p-6 flex flex-col gap-5">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+              <div>
+                <div class="flex  items-center relative">
+                  <img src="./img/review-3.jpg" alt="review image" class="rounded-full w-12 h-12">
+                  <div class="ml-4">
+                    <p class="name">John doe</p>
+                    <p class="paragraph">Designer</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor absolute right-0"></i>
+                </div>
+              </div>
+            </li>
+            <!-- review -->
+            <li class="swiper-slide bg-primaryColor rounded-lg p-6 flex flex-col gap-5">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+              <div>
+                <div class="flex  items-center relative">
+                  <img src="./img/review-4.jpg" alt="review image" class="rounded-full w-12 h-12">
+                  <div class="ml-4">
+                    <p class="name">John doe</p>
+                    <p class="paragraph">Designer</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor absolute right-0"></i>
+                </div>
+              </div>
+            </li>
+            <!-- review -->
+            <li class="swiper-slide bg-primaryColor rounded-lg p-6 flex flex-col gap-5">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+              <div>
+                <div class="flex  items-center relative">
+                  <img src="./img/review-5.jpg" alt="review image" class="rounded-full w-12 h-12">
+                  <div class="ml-4">
+                    <p class="name">John doe</p>
+                    <p class="paragraph">Designer</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor absolute right-0"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+
+      </div>
+    </section>
 
     <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
 
@@ -391,10 +478,44 @@
     <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
 
     <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction:false
+        },
   
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable:true
+      },
+      grabCursor:true,
+      breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      
+    }
+  }
+    });
+    </script>
   <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
 
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 
   </body>
 </html>

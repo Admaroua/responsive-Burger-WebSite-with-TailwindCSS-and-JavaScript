@@ -33,6 +33,9 @@
     .section_title{
         @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
     }
+    .name{
+        @apply text-base font-oswald uppercase;
+    }
     .section_title{
         @apply text-3xl;
     }
